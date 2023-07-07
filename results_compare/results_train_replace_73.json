@@ -1,0 +1,32 @@
+{
+    "epoch-0": {
+        "exact": 75.13832997987927, 
+        "f1": 81.26769603827367, 
+        "total": 31808, 
+        "HasAns_exact": 63.76312618350835, 
+        "HasAns_f1": 74.95052938459717, 
+        "HasAns_total": 17427, 
+        "NoAns_exact": 88.92288436131007, 
+        "NoAns_f1": 88.92288436131007, 
+        "NoAns_total": 14381, 
+        "best_exact": 75.13832997987927, 
+        "best_exact_thresh": 0.0, 
+        "best_f1": 81.26769603827529, 
+        "best_f1_thresh": 0.0
+    },
+    "epoch-1": {
+        "exact": 76.55621227364185, 
+        "f1": 82.91941546500962, 
+        "total": 31808, 
+        "HasAns_exact": 67.38968267630688, 
+        "HasAns_f1": 79.0038886274738, 
+        "HasAns_total": 17427, 
+        "NoAns_exact": 87.66427925735346, 
+        "NoAns_f1": 87.66427925735346, 
+        "NoAns_total": 14381, 
+        "best_exact": 76.55621227364185, 
+        "best_exact_thresh": 0.0, 
+        "best_f1": 82.91941546501117, 
+        "best_f1_thresh": 0.0
+    }
+}

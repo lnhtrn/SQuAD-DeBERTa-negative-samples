@@ -1,0 +1,47 @@
+{
+    "epoch-0": {
+        "exact": 66.29834254143647,
+        "f1": 74.52107260121046,
+        "total": 26064,
+        "HasAns_exact": 64.55078125,
+        "HasAns_f1": 76.86220337074538,
+        "HasAns_total": 17408,
+        "NoAns_exact": 69.81284658040666,
+        "NoAns_f1": 69.81284658040666,
+        "NoAns_total": 8656,
+        "best_exact": 66.29450583179865,
+        "best_exact_thresh": 0.0,
+        "best_f1": 74.51723589157214,
+        "best_f1_thresh": 0.0
+    },
+    "epoch-1": {
+        "exact": 70.26166359729896,
+        "f1": 78.33598180553889,
+        "total": 26064,
+        "HasAns_exact": 66.56135110294117,
+        "HasAns_f1": 78.65056467024041,
+        "HasAns_total": 17408,
+        "NoAns_exact": 77.70332717190388,
+        "NoAns_f1": 77.70332717190388,
+        "NoAns_total": 8656,
+        "best_exact": 70.25782688766114,
+        "best_exact_thresh": 0.0,
+        "best_f1": 78.3321450959006,
+        "best_f1_thresh": 0.0
+    },
+    "epoch-2": {
+        "exact": 71.61602209944752,
+        "f1": 79.54754076595403,
+        "total": 26064,
+        "HasAns_exact": 67.19324448529412,
+        "HasAns_f1": 79.06865248872941,
+        "HasAns_total": 17408,
+        "NoAns_exact": 80.51062846580406,
+        "NoAns_f1": 80.51062846580406,
+        "NoAns_total": 8656,
+        "best_exact": 71.6121853898097,
+        "best_exact_thresh": 0.0,
+        "best_f1": 79.54370405631587,
+        "best_f1_thresh": 0.0
+    }
+}
