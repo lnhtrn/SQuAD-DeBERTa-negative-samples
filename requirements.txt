@@ -1,0 +1,9 @@
+pyyaml
+nltk
+transformers
+numpy
+tqdm
+torch
+tensorboardx
+datasets
+evaluate
