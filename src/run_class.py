@@ -403,9 +403,9 @@ def load_and_cache_examples(args, tokenizer, evaluate=False, output_examples=Fal
         dl_mode='force_redownload'
 
     if evaluate:
-        dataset_path = "data/squad_2.0/data_test.csv"
+        dataset_path = args.predict_file
     else:
-        dataset_path = "data/squad_2.0/data_train.csv"
+        dataset_path = args.train_file
 
     dataset = load_dataset("csv", data_files=dataset_path) # download_mode="force_redownload"
 
@@ -496,7 +496,7 @@ def main():
         action="store_true",
         help="If true, the SQuAD examples contain some that do not have an answer.",
     )
-    
+
     parser.add_argument(
         "--max_seq_length",
         default=384,
@@ -811,5 +811,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
