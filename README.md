@@ -23,11 +23,11 @@ My mentor suggested that increasing the negative samples in the training dataset
 
 [^2]: [Do We Know What We Don’t Know? Studying Unanswerable Questions beyond SQuAD 2.0](https://aclanthology.org/2021.findings-emnlp.385.pdf)
 
+
+
 ## Negative sample sampling methods
 
-The most important thing is understanding what *negative samples* are.
-
-Basically, each SQuAD sample has a structure like this:
+Each SQuAD sample has a structure like this:
 
 ```json
 {
@@ -60,14 +60,13 @@ A *positive sample* is a sample with `context`, `question`, and one or more corr
 }
 ```
 
+This project aims to generate more `negative sample`s like this to see if that would improve the model's performance.
 
 
 
 ### 1. Weighted Sampling 
 
-The original distribution of positive and negative samples in the training set was roughly 50:50. I used Weighted Sampling to generate different ratios of positive and negative samples in the training set to see if there would be any improvement in model accuracy.
-
-
+The original distribution of positive and negative samples in the training set was roughly 50:50. I used Weighted Sampling (`torch`'s `WeightedRandomSampler`) to generate different ratios of positive and negative samples in the training set to see if there would be any improvement in model accuracy.
 
 
 
@@ -98,15 +97,9 @@ The newly generated question has no correct answer, thus making it a negative sa
 ![Example of replacing keywords to create new questions](https://github.com/lnhtrn/SQuAD_DeBERTa_performance_analysis/assets/72944083/4180f345-ef5f-4150-8e7d-6e24afe51de7)
 
 
-## Model training & other code
+## Model training
 
-### 1. Classification model
-
-
-
-
-### 2. Question-Answering model
-
+This is explained in the [/src](src) folder's `readme` file. 
 
 
 
