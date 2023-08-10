@@ -97,6 +97,10 @@ The newly generated question has no correct answer, thus making it a negative sa
 
 ## Results
 
+This is the overall results between all models:
+
+![image](https://github.com/lnhtrn/SQuAD-DeBERTa-negative-samples/assets/72944083/aa91cdee-e811-4793-a112-1453f07528f5)
+
 ### 1. Weighted Sampling method
 
 ### 2. Swap method
