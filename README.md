@@ -2,7 +2,9 @@
 
 ## Project Overview
 
-I started to be curious about Question-Answering tasks and the first dataset I started with was [SQuAD v2.0](https://rajpurkar.github.io/SQuAD-explorer/) and the model I used in this project was [DeBERTa v3 small](https://huggingface.co/microsoft/deberta-v3-small) by Microsoft.
+I was given the task of improving a pretrained MRC/Question-Answering model by my mentor.
+
+The dataset I used was [SQuAD v2.0](https://rajpurkar.github.io/SQuAD-explorer/) and the model was [DeBERTa v3 small](https://huggingface.co/microsoft/deberta-v3-small) by Microsoft.
 
 After knowing that Machine Learning models often tend to learn shortcuts[^1][^2], I tried to brainstorm different ways of reducing shortcuts to apply in my own project. 
 
