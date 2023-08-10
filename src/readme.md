@@ -32,7 +32,7 @@ The [script](scripts/run_generate.sh) is set up with these parameters:
 
 The ratio is the 1/n of new negative samples generated based on the positive samples. `--context_cache` is an optional `bool`, which equals to `true` when the context was already generated for the task.
 
-
+---
 
 ### 2. [Classification model](src/run_class.py) 
 
@@ -98,7 +98,7 @@ The [script](scripts/run_class.sh) is set up with these parameters:
 
 The parameters are set up as usual.
 
-
+---
 
 ### 3. [Question-Answering model](src/run_squad.py)
 
