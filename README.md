@@ -2,9 +2,15 @@
 
 ## Project Overview
 
-I was given the task of improving a pretrained MRC/Question-Answering model by my mentor.
+The project is about improving [DeBERTa v3 small](https://huggingface.co/microsoft/deberta-v3-small) MRC/Question-Answering model by Microsoft using [SQuAD v2.0](https://rajpurkar.github.io/SQuAD-explorer/) dataset.
 
-The dataset I used was [SQuAD v2.0](https://rajpurkar.github.io/SQuAD-explorer/) and the model was [DeBERTa v3 small](https://huggingface.co/microsoft/deberta-v3-small) by Microsoft.
+The source code for model training can be found in the [/src](src) folder with explanations, and can be run using the scripts in the [/scripts](scripts) folder. The results are stored in the [/results](results) folder with a notebook detailing the analysis process.
+
+Additional requirements outside of [requirements.txt](requirements.txt) might be needed to run the project. 
+
+---
+
+## Introduction
 
 After knowing that Machine Learning models often tend to learn shortcuts[^1][^2], I tried to brainstorm different ways of reducing shortcuts to apply in my own project. 
 
@@ -66,7 +72,7 @@ The original distribution of positive and negative samples in the training set w
 
 
 
-### 2. Question classification 
+### 2. Generated Samples: Question classification 
 
 All questions in the training dataset are classified into 7 types (What, Who, Where, Why, When, Which, Count) before this process using a classification model. 
 
@@ -83,7 +89,7 @@ The newly generated question has no correct answer, thus making it a negative sa
 
 
 
-### 3. Replacing keywords
+### 3. Generated Samples: Replacing keywords
 
 First, I used `transformer`'s NER pipeline (`pipeline("ner", aggregation_strategy='average')`) on contexts. Then, I generated new questions based on existing questions for the same context, replacing certain words in the question with other keywords found in the text. 
 
@@ -91,6 +97,15 @@ The newly generated question has no correct answer, thus making it a negative sa
 
 ![Example of replacing keywords to create new questions](https://github.com/lnhtrn/SQuAD_DeBERTa_performance_analysis/assets/72944083/4180f345-ef5f-4150-8e7d-6e24afe51de7)
 
+
+## Model training & other code
+
+### 1. Classification model
+
+
+
+
+### 2. Question-Answering model
 
 
 
