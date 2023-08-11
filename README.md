@@ -107,7 +107,7 @@ This is explained in the [/src](src) folder's `readme` file.
 
 This is the overall results between all models:
 
-![image](https://github.com/lnhtrn/SQuAD-DeBERTa-negative-samples/assets/72944083/aa91cdee-e811-4793-a112-1453f07528f5)
+![image](https://github.com/lnhtrn/SQuAD-DeBERTa-negative-samples/assets/72944083/7b6d95fb-ccb6-4d04-a25b-ae9b513b891b)
 
 ### 1. Weighted Sampling method
 
