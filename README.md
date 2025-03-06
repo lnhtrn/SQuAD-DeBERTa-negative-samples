@@ -1,4 +1,4 @@
-## SQuAD DeBERTa Performance with Increased Negative Samples
+## SQuAD DeBERTa Performance Analysis with Increased Negative Samples
 
 ## Project Overview
 
@@ -7,6 +7,19 @@ The project is about improving [DeBERTa v3 small](https://huggingface.co/microso
 The source code for model training can be found in the [/src](src) folder with explanations, and can be run using the scripts in the [/scripts](scripts) folder. The results are stored in the [/results](results) folder with a notebook detailing the analysis process.
 
 Additional requirements outside of [requirements.txt](requirements.txt) might be needed to run the project. 
+
+**Objective:** Improved DeBERTa v3 small MRC/Question-Answering model using SQuAD v2.0 dataset by increasing negative samples to reduce model shortcuts.
+
+**Approach:**
+- **Weighted Sampling:** Used WeightedRandomSampler to adjust the positive/negative sample ratio and evaluate model performance.
+- **Question Classification:** Classified questions into 7 types (e.g., What, Who, When) to generate new negative samples by replacing nouns with contextually similar nouns.
+- **Keyword Replacement:** Applied Named Entity Recognition (NER) to replace keywords in questions with other nouns from the context, generating negative samples.
+
+**Model Training:** Explored various training techniques, including augmented data with new negative samples.
+
+**Results:**
+- Best performance achieved with the keyword replacement method.
+- Model efficiency affected by the balance of positive/negative samples, with too many negatives leading to inconsistencies.
 
 ---
 
